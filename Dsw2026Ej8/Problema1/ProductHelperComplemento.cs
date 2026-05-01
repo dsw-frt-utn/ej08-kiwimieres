@@ -6,6 +6,9 @@ namespace Dsw2026Ej8.Problema1
 {
     internal partial class ProductHelper
     {
-        int stockPapa = 100;
+        public string GenerarTexto(long code, string description, decimal price)
+        {
+            return $"[{code}] {description} - {price:C2}";
+        }
     }
 }

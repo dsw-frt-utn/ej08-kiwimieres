@@ -8,8 +8,8 @@ namespace Dsw2026Ej8.Problema1
     {
         public string ObtenerEtiquetaProducto(long code, string description, decimal price)
         {
-            stockPapa -= 1; 
-            return $"[{code}] {description} - {price:C2}";
+            
+            return GenerarTexto(code, description, price);
         }
 
     }
